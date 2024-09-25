@@ -12,27 +12,27 @@ it can help supplement your notes.
 **Without running the program**, predict what its behavior is.
 
 1. What will the program output when it is run?
-    >  your answer
+    >  I think the program will output the side length.
 
 2. What do you think the words `public` and `private` mean?
-    > your answer
+    > I think public is a variable or method that can be accesseed outside of the class, and private is a variable or method that can be only accessed in the class.
 
 3. How are the files `ShapeDriver.java` and `Square.java` related? 
-    > your answer
+    > The file ShapeDriver uses the square object from the square.java file.
 
 4. There is no method definition for `Square()`. Do you think the code will compile? 
-    > your answer
+    > Yes, because square is an object in a file in the same directory.
 
 5. Why do the methods/functions `getSide()` and `setSide()` exist? 
-    > your answer
+    > Because they are public methods in the square object.
 
 ## Run
 Run the program. 
 1. What is the output?
-    > your answer
+    > The side length
 
 2. Did your prediction agree with the output? Explain where it may have differed.
-    > your answer
+    > My prediction agrees with the output.
 
 ## Investigate
 In this section, your instructor will alternate between explaining topics and tackling a `TODO` in the Modify section.

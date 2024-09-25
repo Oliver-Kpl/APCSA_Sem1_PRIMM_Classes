@@ -1,3 +1,5 @@
+import java.lang.Math;
+
 /**
  * Implements a class that encapsulates data and methods for representing a square
  * @author 
@@ -6,22 +8,24 @@
  */
 
 class Square {
-        /** The side length of the square **/
+    /** The side length of the square **/
     private double side = 1.0;
 
-        /** The perimeter of the square **/
+    /** The perimeter of the square **/
     private double perimeter = 4.0;
 
-        /** The area of the square **/
-        // TODO: add an instance variable for area
-    
+    /** The area of the square **/
+    private double area = 1.0;
 
     /**
      * Constructor
      * @param side double representing the side length. Assumes positive non-zero 
      */
-        // TODO: add a constructor that takes a side length
-
+    public Square(double side) {
+        this.side = side;
+        this.perimeter = 4 * side;
+        this.area = side * side;
+    }
 
     /**
      * Gets side length
@@ -35,13 +39,17 @@ class Square {
      * Gets perimeter
      * @return double representing perimeter
      */
-    // TODO: implement getter for perimeter
+    public double getPerimeter() {
+        return perimeter;
+    }
 
     /**
      * Gets area
      * @return double representing area
      */
-    // TODO: implement getter for area
+    public double getArea() {
+        return area;
+    }
 
     /**
      * Sets side length. Perimeter and area are updated
@@ -49,19 +57,25 @@ class Square {
      */
     public void setSide(double s) {
         side = s;
-        perimeter = 4 * side; // calculate perimeter
-        // TODO: calculate the area
+        perimeter = 4 * side;
+        area = side * side;
     }
 
     /**
      * Sets area. Perimeter and side length are updated
      */
-    // TODO: implement - you will need to import java.lang.Math to use sqrt() method
-
+    public void setArea(double a) {
+        area = a;
+        side = Math.sqrt(area);
+        perimeter = 4 * side;
+    }
 
     /**
      * Sets perimeter. Area and side length are updated
      */
-    // TODO: implement - you will need to import java.lang.Math to use sqrt() method
-
+    public void setPerimeter(double p) {
+        perimeter = p;
+        side = perimeter / 4;
+        area = side * side;
+    }
 }
